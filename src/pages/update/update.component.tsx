@@ -22,7 +22,11 @@ const UpdateFormComponent = () => {
   return (
     <div>
       <Form name='basic' onFinish={onSubmit}>
-        <Form.Item name='title' label={`${translate('title')}`}>
+        <Form.Item
+          name='title'
+          label={`${translate('title')}`}
+          rules={[{ required: true, message: `${translate('empty_message')}` }]}
+        >
           <Input className={classes.input} autoFocus={true} />
         </Form.Item>
 
