@@ -21,7 +21,13 @@ const FormComponent = () => {
     <div>
       <Space>
         <Form initialValues={initialValues} name='basic' onFinish={onSubmit}>
-          <Form.Item name='title' label={`${translate('title')}`}>
+          <Form.Item
+            name='title'
+            label={`${translate('title')}`}
+            rules={[
+              { required: true, message: `${translate('empty_message')}` },
+            ]}
+          >
             <Input autoFocus={true} />
           </Form.Item>
 
