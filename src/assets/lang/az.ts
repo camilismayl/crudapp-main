@@ -14,6 +14,7 @@ export const az = {
   //messages
   deleted_successfully: 'Müvəffəqiyyətlə silindi!',
   deleted_error: 'Silinmədə xəta baş verdi!',
+  empty_message: 'Xana boş qoyula bilməz',
 
   yes: 'Hə',
   no: 'Yox',
